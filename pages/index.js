@@ -2,6 +2,7 @@
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import SectionOne from "../components/SectionOne";
+import SectionTwo from "../components/SectionTwo";
 
 
 export default function Home() {
@@ -10,7 +11,8 @@ export default function Home() {
       <Nav />
       <Header />
       <SectionOne />
-      {/* <Welcome /> */}
+      <SectionTwo />
+     
     </>
  
   );
