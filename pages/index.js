@@ -2,7 +2,8 @@
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import SectionOne from "../components/SectionOne";
-import SectionTwo from "../components/SectionTwo";
+import Footer from "../components/Footer";
+
 
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       <Nav />
       <Header />
       <SectionOne />
-      <SectionTwo />
+     <Footer />
      
     </>
  
