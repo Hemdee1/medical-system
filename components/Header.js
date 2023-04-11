@@ -7,14 +7,14 @@ import time from "../public/image/time.png";
 const Header = () => {
   return (
     <div className="bg-[#EBFFF5] w-full h-full rounded-b-3xl relative pb-10">
-      <div className="flex justify-around">
-        <div>
-          <h1 className="text-[40px] text-black mt-20 font-Caudex">
+      <div className="lg:flex lg:justify-around lg:flex-row md:flex md:pt-12 pt-0 md:flex-row lg:pt-0 sm:flex-col flex-col">
+        <div className="lg:pl-0">
+          <h1 className="lg:text-[40px] md:pl-7 pl-7 sm:pl-7 lg:pl-0 md:text-3xl text-3xl sm:text-xl text-black lg:mt-20 md:mt-2 pt-[110px] sm:mt-24  font-Caudex">
             "Where clear vision meets
             <br />
             <span> compasionate care".</span>
           </h1>
-          <p className="mt-5 text-base font-OpenSans">
+          <p className="mt-5 lg:text-base text-black md:text-sm text-sm sm:text-sm font-OpenSans md:pl-7 pl-7 sm:pl-7 lg:pl-0 leading-6">
             {" "}
             A specialized medical facility that provides diagnostic,
             <br /> therapeutic, and surgical services related to the eyes and{" "}
@@ -30,7 +30,7 @@ const Header = () => {
             height={900}
             src={doctor}
             alt="logo"
-            className="-mt-20 z-10"
+            className="lg:-mt-20 md:-mt-[80px] z-10 -mt-16 sm:-mt-16"
           />
         </div>
       </div>
