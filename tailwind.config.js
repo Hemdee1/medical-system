@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         primary: "#4FB783",
         secondary: "#034561",
+        dashboardGray: "#f6f6f6",
       },
       fontFamily: {
         Caudex: "Caudex, serif",
