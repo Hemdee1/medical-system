@@ -15,11 +15,11 @@ const SectionTwo = () => {
 
   return (
     <div className="">
-      <div className="mt-20">
-        <h1 className="text-center text-[80px] text-[#dddddd] text-opacity-30 tracking-[.19em] font-Opensans font-bold">
+      <div className="mt-28 mb-10">
+        <h1 className="text-center lg:text-[80px] md:text-[75px] text-6xl lg:-mt-0 -mt-10 md:-mt-0 sm:text-4xl text-[#dddddd] text-opacity-30 tracking-[.19em] font-Opensans font-bold">
           Services
         </h1>
-        <p className="text-xl text-secondary font-bold font-Caudex text-center -mt-[68px] tracking-wide">
+        <p className="lg:text-xl md:text-xl -mt-10 text-base text-secondary font-bold font-Caudex text-center lg:-mt-[33px] md:-mt-[33px] tracking-wide">
           "Seeing the world in a whole new way."
         </p>
       </div>
@@ -31,7 +31,6 @@ const SectionTwo = () => {
 
             <Swiper
               effect={"flip"}
-              
               loop={true}
               navigation={true}
               modules={[EffectFlip, Navigation]}
@@ -40,7 +39,10 @@ const SectionTwo = () => {
               <div className="flex justify-center items-center">
                 {data.hospitals.map((hospitals, _index) => {
                   return (
-                    <SwiperSlide key={_index} className="bg-blue-100">
+                    <SwiperSlide
+                      key={_index}
+                      style={{ backgroundColor: "#DDDDDD" }}
+                    >
                       <div className="w-72 h-72 m-auto mt-5 mb-5">
                         <img
                           src={hospitals.image_url}
@@ -48,6 +50,10 @@ const SectionTwo = () => {
                           className="w-56 h-56 rounded-xl text-center"
                         />
                       </div>
+                      <div>{hospitals.name}</div>
+                      <div>{hospitals.type}</div>
+                      <div>{hospitals.address}</div>
+                      <div>{hospitals.description}</div>
                     </SwiperSlide>
                   );
                 })}
