@@ -1,12 +1,23 @@
-import Welcome from "../components/Welcome";
+// import Welcome from "../components/Welcome";
+import Nav from "../components/Nav";
+import Header from "../components/Header";
+import SectionOne from "../components/SectionOne";
+import SectionTwo from "../components/SectionTwo";
+import Footer from "../components/Footer";
+
+
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex justify-center items-center flex-col">
-      <h1 className="font-Caudex font-bold text-5xl text-primary">
-        Medical Appointment System
-      </h1>
-      <Welcome />
-    </div>
+    <>
+      <div className="overflow-hidden">
+      <Nav />
+      <Header />
+      <SectionOne />
+      <SectionTwo />
+     <Footer />
+     </div>
+    </>
+ 
   );
 }
