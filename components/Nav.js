@@ -11,8 +11,8 @@ const Nav = () => {
 // };
   return (
     <div>
-      <div className="bg-[#EBFFF5] w-full h-20 lg:flex lg:space-x-60 md:hidden hidden xl:space-x-80 sm:hidden fixed z-10">
-        <div className="z-10 lg:ml-5 md:pl-8">
+      <div className="bg-[#EBFFF5] w-full h-20 lg:flex lg:space-x-64 md:hidden hidden xl:space-x-80 sm:hidden fixed z-10">
+        <div className="z-10 lg:ml-6 md:pl-8">
           <Image
             priority
             width={100}

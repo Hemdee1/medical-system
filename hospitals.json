@@ -7,7 +7,7 @@
           "name": "Lagos University Teaching Hospital",
           "type": "Public",
           "address": "Idi-Araba, Lagos",
-          "description": "Lagos University Teaching Hospital (LUTH) is a tertiary healthcare institution located in Idi-Araba, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "Lagos University Teaching Hospital (LUTH) is a Public tertiary healthcare institution  that provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
           "image_url": "https://www.thequickfinder.com/wp-content/uploads/2021/01/luth-13.jpg",
           "doctors": [
             {
@@ -31,7 +31,7 @@
           "name": "Reddington Hospital",
           "type": "Private",
           "address": "12 Idowu Martins Street, Victoria Island, Lagos",
-          "description": "Reddington Hospital is a private hospital located in Victoria Island, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "Reddington Hospital is a Private hospital that provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
           "image_url": "https://reddingtonhospital.com/wp-content/uploads/2020/02/04-2-1.jpg",
           "doctors": [
             {
@@ -55,7 +55,7 @@
           "name": "St. Nicholas Hospital",
           "type": "Private",
           "address": "57 Campbell Street, Lagos Island, Lagos",
-          "description": "St. Nicholas Hospital is a private hospital located in Lagos Island, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "St. Nicholas Hospital is a private hospital that hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
           "image_url": "https://www.channelstv.com/wp-content/uploads/2020/04/rsz_1st-nicholas-hospital_campbell-1024x683.jpg",
           "doctors": [
             {
@@ -79,7 +79,7 @@
           "name": "Eko Hospital",
           "type": "Private",
           "address": "31 Mobolaji Bank Anthony Way, Ikeja, Lagos",
-          "description": "Eko Hospital is a private hospital located in Ikeja, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "Eko Hospital is a Private hospital The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
           "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/EKO_hospital_Victoria_Island%2CLagos.jpg",
           "doctors": [
             {
@@ -103,7 +103,7 @@
           "name": "Lagoon Hospital",
           "type": "Private",
           "address": "6A, Marinho Drive, Victoria Island, Lagos",
-          "description": "Lagoon Hospital is a private hospital located in Victoria Island, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "Lagoon Hospital is a Private hospital that hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
           "image_url": "https://moanigeria.com/wp-content/uploads/slider_images/Lagoon%20Hospital,%20Apapa.jpg",
           "doctors": [
             {

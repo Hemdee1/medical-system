@@ -6,7 +6,8 @@ import "swiper/css/effect-flip";
 // import styles from "../styles/globals.css"
 import "swiper/css";
 import "swiper/css/navigation";
-import {EffectFlip, Navigation, } from "swiper";
+import "swiper/css/pagination";
+import {EffectFlip, Navigation, Pagination } from "swiper";
 
 
 
@@ -33,7 +34,12 @@ const SectionTwo = () => {
               effect={"flip"}
               loop={true}
               navigation={true}
-              modules={[EffectFlip, Navigation]}
+              spaceBetween={30}
+              pagination={{
+                dynamicBullets: true,
+                clickable: true,
+              }}
+              modules={[EffectFlip, Navigation, Pagination]}
               className="mySwiper"
             >
               <div className="flex justify-center items-center">
@@ -41,19 +47,29 @@ const SectionTwo = () => {
                   return (
                     <SwiperSlide
                       key={_index}
-                      style={{ backgroundColor: "#DDDDDD" }}
+                      style={{ backgroundColor: "inherit", width: "100px" }}
                     >
-                      <div className="w-72 h-72 m-auto mt-5 mb-5">
+                      <div className="w-96 h-96 m-auto mt-5 mb-5">
                         <img
                           src={hospitals.image_url}
                           alt=""
                           className="w-56 h-56 rounded-xl text-center"
                         />
                       </div>
-                      <div>{hospitals.name}</div>
+                      <div className="text-black text-xl font-Caudex">
+                        {hospitals.name}
+                      </div>
                       <div>{hospitals.type}</div>
-                      <div>{hospitals.address}</div>
-                      <div>{hospitals.description}</div>
+                      <div className="w-3/4 m-auto">
+                        <p className="text-black break-words whitespace-normal text-base font-OpenSans">
+                          {hospitals.description}
+                        </p>
+                      </div>
+
+                      <div className="mb-20 text-black break-words whitespace-normal text-base font-OpenSans">
+                        {hospitals.address}
+                      </div>
+                      {/* <div className="swiper-pagination mt-20"></div> */}
                     </SwiperSlide>
                   );
                 })}
