@@ -13,7 +13,7 @@ export const getLoggedInUser = async () => {
 //   email: "hemdee@gmail.com",
 //   password: "hemdee",
 // };
-export const Login = async (data) => {
+export const LogIn = async (data) => {
   const result = await axiosInstance.post("/api/user/login", data);
   return result.data;
 };
@@ -24,7 +24,7 @@ export const Login = async (data) => {
 //   lastName: 'Doe',
 //   password: "hemdee",
 // };
-export const Signup = async (data) => {
+export const SignUp = async (data) => {
   const result = await axiosInstance.post("/api/user/signup", data);
   return result.data;
 };
