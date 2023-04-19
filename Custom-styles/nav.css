@@ -1,0 +1,33 @@
+.menu {
+cursor: pointer;
+transition: transform  1000ms;
+}
+
+.menu:hover,
+.menu:focus-visible {
+    transform:  translateY(-1.40em);
+}
+
+.slide-in-left {
+  animation-name: slideInFromLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%);}
+  to { transform: translateX(0%); } 
+}
+
+.slide-out {
+  animation-name: slideOut;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0%);}
+  to { transform: translateX(-100%); }
+
+  
+}

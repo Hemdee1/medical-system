@@ -7,7 +7,7 @@
           "name": "Lagos University Teaching Hospital",
           "type": "Public",
           "address": "Idi-Araba, Lagos",
-          "description": "Lagos University Teaching Hospital (LUTH) is a tertiary healthcare institution located in Idi-Araba, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "The Lagos University Teaching Hospital (LUTH) is a Public tertiary institution in Nigeria , with over 950 admission beds, Forty-Six (46) Clinical Departments, Eighteen (18) Non-Clinical Departments and Outreaches at both Yaba and Pakoto. Presently the Hospital has over Two Thousand Three hundred (2,300) Staff comprising of Consultants, Resident/Medical Officers, Nurses, Pharmacists, Physiotherapists, Medical Laboratory scientists, Nutritionists, Hospital Administrators, Engineers and other categories of staff",
           "image_url": "https://www.thequickfinder.com/wp-content/uploads/2021/01/luth-13.jpg",
           "doctors": [
             {
@@ -31,8 +31,8 @@
           "name": "Reddington Hospital",
           "type": "Private",
           "address": "12 Idowu Martins Street, Victoria Island, Lagos",
-          "description": "Reddington Hospital is a private hospital located in Victoria Island, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
-          "image_url": "https://reddingtonhospital.com/wp-content/uploads/2020/02/04-2-1.jpg",
+          "description": "Reddington Hospital is a Private hospital is a 5-star one stop facility providing comprehensive solution to most healthcare needs. This facility was set up as a tertiary centre with specialities, Reddington Lekki Hospital has been established to deliver excellent services to the medical field, with all departments supported by the latest technologies and state-of-the-art medical equipments.",
+          "image_url": "https://reddingtonlekki.com/wp-content/uploads/2019/03/slide-another.jpg",
           "doctors": [
             {
               "name": "Dr. Bolanle Adeyemi",
@@ -55,8 +55,8 @@
           "name": "St. Nicholas Hospital",
           "type": "Private",
           "address": "57 Campbell Street, Lagos Island, Lagos",
-          "description": "St. Nicholas Hospital is a private hospital located in Lagos Island, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
-          "image_url": "https://www.channelstv.com/wp-content/uploads/2020/04/rsz_1st-nicholas-hospital_campbell-1024x683.jpg",
+          "description": "St. Nicholas Hospital is a private hospital that serves the health care needs of our community by providing comprehensive care to prevent illness, relieve suffering, restore health and promote well being during each life stage. We will provide advanced procedures and modern technology, within our available resources, with a focus on caring, compassion and patient safety.",
+          "image_url": "https://campidu.com/file/St.-Nicholas-Hospital_Campbell-1024x683.jpg",
           "doctors": [
             {
               "name": "Dr. Adeyemi Adekunle",
@@ -79,7 +79,7 @@
           "name": "Eko Hospital",
           "type": "Private",
           "address": "31 Mobolaji Bank Anthony Way, Ikeja, Lagos",
-          "description": "Eko Hospital is a private hospital located in Ikeja, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "Eko hospital main objective and goal is to provide a wide range of health services, including secondary services for its local population, regional as well as national health services. Eko hospital, is the first private hospital to be quoted on the floor of the Nigerian Stock Exchange",
           "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/EKO_hospital_Victoria_Island%2CLagos.jpg",
           "doctors": [
             {
@@ -103,8 +103,8 @@
           "name": "Lagoon Hospital",
           "type": "Private",
           "address": "6A, Marinho Drive, Victoria Island, Lagos",
-          "description": "Lagoon Hospital is a private hospital located in Victoria Island, Lagos State, Nigeria. The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
-          "image_url": "https://moanigeria.com/wp-content/uploads/slider_images/Lagoon%20Hospital,%20Apapa.jpg",
+          "description": "Lagoon Hospital is a Private hospital that are a consistently patient-first, world-class healthcare service provider and the leading private tertiary care organization in Nigeria. We operate a collegiate model of multi-disciplinary care and this bolsters the efficiency of highly specialized services delivered to each patient at all departments.",
+          "image_url": "https://www.lagoonhospitals.com/wp-content/uploads/2022/11/aboutt.jpg",
           "doctors": [
             {
               "name": "Dr. Emeka Okoro",
@@ -122,512 +122,16 @@
               "contact": "080XXXXXXXX"
             }
           ]
-        }
-      ]
-    },
-
-    {
-      "state": "FCT",
-      "hospitals": [
-        {
-          "name": "National Hospital Abuja",
-          "type": "Public",
-          "address": "Plot 132 Central District (Phase II) P.M.B 425, Garki, Abuja",
-          "description": "National Hospital Abuja is a Federal Government-owned hospital in the Federal Capital Territory of Nigeria. The hospital was established to provide quality healthcare services to Nigerians and promote medical tourism. It is one of the largest hospitals in Nigeria with over 500 beds and modern medical equipment.",
-          "image_url": "https://nationalhospital.gov.ng/wp-content/uploads/2022/11/IMG-20220707-WA0014-2.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Ahmed Mohammed",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Amina Aliyu",
-              "specialty": "Obstetrics & Gynecology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Usman Bello",
-              "specialty": "Gastroenterology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
         },
-        {
-          "name": "Asokoro District Hospital",
-          "type": "Public",
-          "address": "Asokoro District, Abuja",
-          "description": "Asokoro District Hospital is a public hospital located in the Asokoro District of Abuja. The hospital provides healthcare services to the residents of the district and its environs. It is equipped with modern medical equipment and has qualified medical personnel to attend to patients.",
-          "image_url": "https://m.timbu.com/poi/1955/aso-1955-57b64e7410463.png",
-          "doctors": [
-            {
-              "name": "Dr. Funmilayo Ajayi",
-              "specialty": "Internal Medicine",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Ibrahim Musa",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Ifeanyi Okonkwo",
-              "specialty": "Surgery",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Nisa Premier Hospital",
+         {
+          "name": "Ever Care Hospital",
           "type": "Private",
-          "address": "Plot 618, Alex Ekwueme Way, Jabi, Abuja",
-          "description": "Nisa Premier Hospital is a private hospital located in Jabi, Abuja. The hospital provides a wide range of medical services to patients using modern technology and highly trained medical personnel. It is equipped with state-of-the-art medical equipment and has a comfortable and welcoming environment for patients.",
-          "image_url": "https://nisa.com.ng/wp-content/uploads/2021/02/bld.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Chinyere Okafor",
-              "specialty": "Dermatology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Olumide Adeyemi",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Adewale Ogunleye",
-              "specialty": "Oncology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Primus International Super Specialty Hospital",
-          "type": "Private",
-          "address": "Karimu Kotun Street, Victoria Island, Lagos",
-          "description": "Primus International Super Specialty Hospital is a private hospital located in Victoria Island, Lagos. The hospital is equipped with modern medical equipment and has highly trained medical personnel to attend to patients. It provides a wide range of medical services including cardiology, neurology, oncology, and pediatrics.",
-          "image_url": "https://m.timbu.com/poi/441/pri1.jpg-441-5717bc7ea2c4a.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Gloria Obi",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. John Okoye",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Blessing Oluwafemi",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Maitama District Hospital",
-          "type": "Public",
-          "address": "Maitama District, Abuja",
-          "description": "Maitama District Hospital is a public hospital located in the Maitama District of Abuja. The hospital provides healthcare services to the residents of the district and its environs. It is equipped with modern medical equipment and has qualified medical personnel to attend to patients.",
-          "image_url": "https://c8.alamy.com/zooms/9/812374dc635a4929b45c7d7178f29a70/2cx1wh6.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Ibrahim Hassan",
-              "specialty": "Internal Medicine",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Maryam Abubakar",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Abdul Ibrahim",
-              "specialty": "Surgery",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        }
-      ]
-    },
-
-    {
-      "state": "Kano",
-      "hospitals": [
-        {
-          "name": "Aminu Kano Teaching Hospital",
-          "type": "Public",
-          "address": "Zaria Road, Kano",
-          "description": "Aminu Kano Teaching Hospital is a public hospital located in Kano. It is a tertiary health institution that provides a wide range of medical services to patients. The hospital has state-of-the-art medical equipment and highly trained medical personnel to attend to patients. Some of the services provided by the hospital include cardiology, neurology, oncology, and pediatrics.",
-          "image_url": "https://m.timbu.com/poi/1969/1-1969-5845421fde763.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Mohammed Ibrahim",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Fatima Abdullahi",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Aliyu Suleiman",
-              "specialty": "Oncology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Hassan Ibrahim Gwarzo Hospital",
-          "type": "Public",
-          "address": "Gwarzo Road, Kano",
-          "description": "Hassan Ibrahim Gwarzo Hospital is a public hospital located in Kano. The hospital provides medical services to patients in the area and its environs. It is equipped with basic medical equipment and has qualified medical personnel to attend to patients.",
-          "image_url": "https://lh3.googleusercontent.com/p/AF1QipNKh_ncnsgCs6mCvcBAda_MO84o6juX4Vp5PK7Z=s1600-w400",
-          "doctors": [
-            {
-              "name": "Dr. Abdullahi Sani",
-              "specialty": "Internal Medicine",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Aisha Bala",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Ahmed Ibrahim",
-              "specialty": "Surgery",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Kanomed Specialist Hospital",
-          "type": "Private",
-          "address": "Bompai Road, Kano",
-          "description": "Kanomed Specialist Hospital is a private hospital located in Kano. The hospital provides a wide range of medical services to patients, including cardiology, neurology, oncology, and pediatrics. It is equipped with modern medical equipment and has highly trained medical personnel to attend to patients.",
-          "image_url": "https://media.licdn.com/dms/image/C510BAQGYWAh-nJ2MpA/company-logo_200_200/0/1519876431326?e=2147483647&v=beta&t=4mMuZ8518Nih3FGv2FtK7jMuLZ7LsqtpCKQNH0sLXt8",
-          "doctors": [
-            {
-              "name": "Dr. Yusuf Adamu",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Hadiza Abubakar",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Ibrahim Abba",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Nigerian Air Force Hospital",
-          "type": "Public",
-          "address": "Nigerian Air Force Base, Kano",
-          "description": "The Nigerian Air Force Hospital is a public hospital located in Kano. It is a military hospital that provides medical services to military personnel and their families, as well as civilians. The hospital is equipped with modern medical equipment and has qualified medical personnel to attend to patients.",
-          "image_url": "https://i0.wp.com/nigerianmedinterns.com/wp-content/uploads/2019/05/S90530-0818261.jpg?fit=974%2C834&ssl=1",
-          "doctors": [
-            {
-              "name": "Dr. Abubakar Isa",
-              "specialty": "Internal Medicine",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Fatima Ibrahim",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Ibrahim Musa",
-              "specialty": "Surgery",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Aminu Dabo College of Health Sciences and Technology Teaching Hospital",
-          "type": "Public",
-          "address": "Kofar Famfo, Kano",
-          "description": "Aminu Dabo College of Health Sciences and Technology Teaching Hospital is a public hospital located in Kano. It is a teaching hospital that provides medical services to patients and also serves as a training ground for medical students. The hospital is equipped with modern medical equipment and has highly trained medical personnel to attend to patients.",
-          "image_url": "https://i0.wp.com/arewatalent.com/wp-content/uploads/2022/11/aminu-dabo-kano.jpg?resize=1400%2C800&ssl=1",
-          "doctors": [
-            {
-              "name": "Dr. Aliyu Musa",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Aisha Umar",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Umar Hassan",
-              "specialty": "Oncology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        }
-      ]
-    },
-
-    {
-      "state": "Ogun",
-      "hospitals": [
-        {
-          "name": "Babcock University Teaching Hospital",
-          "type": "Private",
-          "address": "Ilisan-Remo, Ogun",
-          "description": "Babcock University Teaching Hospital is a private teaching hospital located in Ilisan-Remo, Ogun State. The hospital is a teaching hospital for Babcock University's medical school, providing healthcare services for patients and clinical training for medical students. The hospital is well-equipped with modern medical equipment and has highly trained medical personnel to attend to patients.",
-          "image_url": "https://www.babcock.edu.ng/assets/images/buth/inpatient.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Adetunji Adeoye",
-              "specialty": "Ophthalmology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Adekunle Adeyemi",
-              "specialty": "Dermatology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Olamide Adedeji",
-              "specialty": "Obstetrics and Gynecology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Federal Medical Centre, Abeokuta",
-          "type": "Public",
-          "address": "Idi-Aba, Abeokuta",
-          "description": "Federal Medical Centre, Abeokuta is a public hospital located in Idi-Aba, Abeokuta. The hospital provides healthcare services to patients and also serves as a training ground for medical students. The hospital is equipped with modern medical equipment and has qualified medical personnel to attend to patients.",
-          "image_url": "https://fmcabeokuta.net/wp-content/uploads/slider/cache/3a7edccec59bc97ada70df436290665b/DSC_0174.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Olufemi Adewole",
-              "specialty": "Internal Medicine",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Adeyinka Adekunle",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Oluwatosin Adeyemo",
-              "specialty": "Surgery",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Reddington Hospital, Abeokuta",
-          "type": "Private",
-          "address": "GRA, Abeokuta",
-          "description": "Reddington Hospital, Abeokuta is a private hospital located in GRA, Abeokuta. The hospital provides healthcare services to patients and is well-equipped with modern medical equipment. The hospital has highly trained medical personnel to attend to patients.",
-          "image_url": "https://reddingtonhospital.com/wp-content/uploads/2020/02/04-2-1.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Folasade Adetona",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Adeola Adeyemo",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Oluseyi Adebanjo",
-              "specialty": "Oncology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "State Hospital, Ijaiye",
-          "type": "Public",
-          "address": "Ijaiye, Abeokuta",
-          "description": "State Hospital, Ijaiye is a public hospital located in Ijaiye, Abeokuta. The hospital provides healthcare services to patients and is well-equipped with modern medical equipment. The hospital has qualified medical personnel to attend to patients.",
-          "image_url": "http://cdn.thenigerianvoice.com/images/content/322020113311_main_entrance.png",
-          "doctors": [
-            {
-              "name": "Dr. Oluwatoyin Adeyemi",
-              "specialty": "Dentistry",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Adebola Adeoye",
-              "specialty": "Psychiatry",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Oluwakemi Adeyinka",
-              "specialty": "Family Medicine",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Tendalife Specialist Hospital",
-          "type": "Private",
-          "address": " 5 Celestial Close, off Olaiyapo Street, Asore, Ajuwon Akute Road, 112104, Ogun, Ogun State",
-          "description": "Tendalife Specialist Hospital is a private hospital located in Asore, Ogun. The hospital provides healthcare services to patients and is well-equipped with modern medical equipment. The hospital has highly trained medical personnel to attend to patients.",
-          "image_url": "https://lh5.googleusercontent.com/p/AF1QipNoHMnX7uEIUGwysONNvhG6v4k9piFnRpUHoO3H=w408-h306-k-no",
-          "doctors": [
-            {
-              "name": "Dr. Olumide Adeola",
-              "specialty": "Gastroenterology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Abimbola Adejumo",
-              "specialty": "Endocrinology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Ayodeji Adebanjo",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        }
-      ]
-    },
-
-    {
-      "state": "Rivers",
-      "hospitals": [
-        {
-          "name": "University of Port Harcourt Teaching Hospital",
-          "type": "Public",
-          "address": "East-West Road, Ozuoba, Port Harcourt",
-          "description": "University of Port Harcourt Teaching Hospital is a tertiary hospital that offers specialized medical care to patients in Port Harcourt and its environs. The hospital has a team of highly skilled medical professionals and is equipped with state-of-the-art medical equipment. Its services include emergency medicine, cardiology, neurology, nephrology, oncology, and more.",
-          "image_url": "https://upthng.com/wp-content/uploads/2022/11/upth-building2cc.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Chukwuemeka Ohaegbulam",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Chinyere Amadi",
-              "specialty": "Oncology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Nnamdi Nwachukwu",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Braithwaite Memorial Specialist Hospital",
-          "type": "Public",
-          "address": "Old GRA, Port Harcourt",
-          "description": "Braithwaite Memorial Specialist Hospital is a public hospital that offers specialized medical care to patients in Port Harcourt and its environs. The hospital is equipped with modern medical equipment and has qualified medical personnel to attend to patients. Its services include surgery, pediatrics, obstetrics and gynecology, orthopedics, and more.",
-          "image_url": "https://estmaster.com/wp-content/uploads/2020/07/BMH1-1024x576.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Adaugo Okoro",
-              "specialty": "Obstetrics and Gynecology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Chukwuka Onuoha",
-              "specialty": "Orthopedics",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Oluwaseun Olatunji",
-              "specialty": "Pediatrics",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Lily Hospital",
-          "type": "Private",
-          "address": "13B, Olubunmi Owa Street, Rumuibekwe, Port Harcourt",
-          "description": "Lily Hospital is a private hospital that provides quality medical care to patients in Port Harcourt and its environs. The hospital has a team of highly skilled medical professionals and is equipped with modern medical equipment. Its services include general medicine, cardiology, dermatology, ophthalmology, and more.",
-          "image_url": "https://babymigo.com/public/uploads/_VCxa3tyADTU_resized.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Blessing Okonkwo",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Ejiroghene Akpovwa",
-              "specialty": "Dermatology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Johnbull Ezenwata",
-              "specialty": "Ophthalmology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Kelina Hospital",
-          "type": "Private",
-          "address": "3A, Peter Odili Road, Trans Amadi, Port Harcourt",
-          "description": "Kelina Hospital is a private hospital that provides quality medical care to patients in Port Harcourt and its environs. The hospital has modern medical equipment and is staffed by qualified medical personnel. Its services include cardiology, gastroenterology, nephrology, neurology, and more.",
-          "image_url": "https://www.kelinahospital.com/wp-content/uploads/2022/11/Kelina-Lagos-building.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Oluseyi Adeleke",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Fidelia Okonkwo",
-              "specialty": "Gastroenterology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. John Okafor",
-              "specialty": "Nephrology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
-        },
-        {
-          "name": "Rivers State University Teaching Hospital",
-          "type": "Public",
-          "address": "Nkpolu Oroworukwo, Port Harcourt",
-          "description": "Rivers State University Teaching Hospital is a tertiary hospital that provides specialized medical care to patients in Port Harcourt and its environs. The hospital has modern medical equipment and is staffed by qualified medical professionals. Its services include cardiology, neurology, nephrology, ophthalmology, and more.",
-          "image_url": "https://thenationonlineng.net/wp-content/uploads/2020/05/Rivers-State-University-Teaching-Hospital.jpg",
-          "doctors": [
-            {
-              "name": "Dr. Nnenna Onyekwelu",
-              "specialty": "Cardiology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Chibuzo Okoli",
-              "specialty": "Neurology",
-              "contact": "080XXXXXXXX"
-            },
-            {
-              "name": "Dr. Mercy Ibekwe",
-              "specialty": "Ophthalmology",
-              "contact": "080XXXXXXXX"
-            }
-          ]
+          "address": "1, Admiralty Way, Bisola Durosinmi Etti Dr, Lekki Phase 1, Lagos",
+          "description": "Evercare hospital Lekki is a 165-bed purpose-built multispecialty, tertiary care private hospital in Nigeria. Evercare Hospital Lekki offers care across a range of specialty medical and surgical services. This is a first of its kind facility in Nigeria and will deliver high quality, and accessible healthcare to communities in Lagos and Nigeria at large.",
+          "image_url": "https://lh3.googleusercontent.com/p/AF1QipO5XKcN4DJiKp8-6QVJ73ftJN4bNxCXSEiZLWL6=s680-w680-h510"
         }
       ]
     }
+   
   ]
 }
