@@ -1,8 +1,40 @@
 import ProfileLayout from "../../components/ProfileLayout";
 import { FaFilePdf, FaFile, FaDownload, FaEye } from "react-icons/fa";
+import { useAppContext } from "../../context/context";
 const category = ["All", "Recent"];
 
-const MedicalRecor = () => {
+const MedicalRecord = () => {
+  const { user } = useAppContext();
+
+  if (!user?.weight) {
+    return (
+      <ProfileLayout>
+        <div className="flex items-center justify-between gap-4 my-5 mb-10">
+          <h2 className="text-2xl font-semibold sm:text-4xl font-Caudex text-primary">
+            Medical records
+          </h2>
+          <div className="flex items-center gap-4">
+            <label className="text-lg font-medium">Show:</label>
+            <select
+              name="show"
+              id="show"
+              className="px-4 py-2 font-medium tracking-wide text-white border-2 border-gray-200 rounded-md outline-primary bg-primary"
+            >
+              {category.map((cate, index) => (
+                <option value={cate} key={index} className="capitalize">
+                  {cate}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+        <div className="mt-5">
+          <p className="text-center font-medium">You have no medical record</p>
+        </div>
+      </ProfileLayout>
+    );
+  }
+
   return (
     <ProfileLayout>
       <main className="w-full px-5 pb-10">
@@ -178,4 +210,4 @@ const MedicalRecor = () => {
   );
 };
 
-export default MedicalRecor;
+export default MedicalRecord;

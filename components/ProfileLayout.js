@@ -9,26 +9,19 @@ import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
 import { useAppContext } from "../context/context";
 import { Logout } from "../API Requests/user";
+import getPathTitle from "../utils/getPathTitle";
 
 const ProfileLayout = ({ children }) => {
   const route = useRouter();
   const [title, setTitle] = useState("");
   const [openSidebar, setOpenSidebar] = useState(false);
-  const { user } = useAppContext();
+  const { user, setUser } = useAppContext();
 
   useEffect(() => {
     const path = route.pathname;
-    if (path === "/profile/dashboard") {
-      setTitle("Dashboard");
-    } else if (path === "/profile/appointment") {
-      setTitle("Appointments");
-    } else if (path === "/profile/bookappointment") {
-      setTitle("Book Appointments");
-    } else if (path === "/profile/record") {
-      setTitle("Medical Records");
-    } else if (path === "/profile" || path === "/profile/update") {
-      setTitle("");
-    }
+
+    const title = getPathTitle(path);
+    setTitle(title);
   }, [route]);
 
   useEffect(() => {
@@ -40,6 +33,8 @@ const ProfileLayout = ({ children }) => {
   const handleLogout = async () => {
     try {
       await Logout();
+
+      setUser(null);
       route.replace("/login");
     } catch (error) {
       console.log(error);
@@ -57,20 +52,20 @@ const ProfileLayout = ({ children }) => {
   return (
     <main className="fixed top-0 left-0 flex w-full h-screen">
       <aside
-        className={`min-w-[250px] h-full shadow-gray-200 shadow-md bg-white py-4 transition-all duration-300 absolute top-0 md:relative md:left-0 z-20 ${
+        className={`min-w-[250px] h-full shadow-gray-200 shadow-md bg-white py-4 transition-all duration-300 absolute top-0 lg:relative lg:left-0 z-20 ${
           openSidebar ? "left-0" : "-left-full"
         }`}
       >
+        <Link href="/">
+          <Image
+            src="/image/Logo.png"
+            alt="Company's Logo"
+            width={100}
+            height={60}
+            className="mx-5"
+          />
+        </Link>
         <div className="flex flex-col items-center w-full mb-5">
-          <Link href="/">
-            <Image
-              src="/image/Logo.png"
-              alt="Company's Logo"
-              width={100}
-              height={60}
-            />
-          </Link>
-
           <div className="w-[100px] h-[100px] rounded-full overflow-hidden mt-[20px] grid place-items-center">
             {user?.img ? (
               <img
@@ -122,7 +117,7 @@ const ProfileLayout = ({ children }) => {
               }
             >
               <ImCalendar />
-              <p className="ml-2"> Appointment</p>
+              <p className="ml-2"> Appointments</p>
             </Link>
             <Link
               href="/profile/bookappointment"
@@ -161,11 +156,11 @@ const ProfileLayout = ({ children }) => {
           <AiOutlineRight className="mx-3" />
 
           <h3>{title}</h3>
-          <button className="ml-auto md:hidden">
+          <button className="ml-auto lg:hidden">
             <Hamburger toggle={setOpenSidebar} toggled={openSidebar} />
           </button>
         </div>
-        <section className="bg-white sm:p-4 w-full  h-[calc(100vh-70px)] overflow-y-scroll scrollbar mt-[70px]">
+        <section className="bg-white sm:p-4 w-full  h-[calc(100vh-70px)] overflow-y-scroll scrollbar-thumb-gray-300 scrollbar mt-[70px]">
           {children}
         </section>
       </section>

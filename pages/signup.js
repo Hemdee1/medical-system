@@ -29,6 +29,7 @@ const Signup = () => {
 
     // signup with data
     try {
+      setError("");
       setLoading(true);
       const data = await SignUp({ email, firstName, lastName, password });
 

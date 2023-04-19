@@ -84,13 +84,13 @@ const Profile = () => {
           </div>
           <div className="flex flex-col justify-between w-full gap-5 sm:gap-10 sm:flex-row">
             <article className="w-full">
-              <p className="mb-2 font-medium font-OpenSans">Height:</p>
+              <p className="mb-2 font-medium font-OpenSans">Height (ft):</p>
               <h2 className="px-4 py-2 text-base font-medium tracking-wide text-gray-600 capitalize rounded-md sm:text-xl bg-slate-100 min-h-[40px]">
                 {user?.height}
               </h2>
             </article>
             <article className="w-full">
-              <p className="mb-2 font-medium font-OpenSans">Weight:</p>
+              <p className="mb-2 font-medium font-OpenSans">Weight (kg):</p>
               <h2 className="px-4 py-2 text-base font-medium tracking-wide text-gray-600 capitalize rounded-md sm:text-xl bg-slate-100 min-h-[40px]">
                 {user?.weight}
               </h2>

@@ -6,7 +6,7 @@
 
 @layer components {
   .btn {
-    @apply px-4 py-2 mt-10 text-sm font-semibold text-white bg-primary font-OpenSans sm:text-base rounded-2xl;
+    @apply px-4 py-2 mt-10 text-sm font-semibold text-white bg-primary font-OpenSans sm:text-base rounded-xl;
   }
 }
 
@@ -23,7 +23,7 @@
 } */
 
 .highlight {
-  background-color: rebeccapurple !important;
+  background-color: #4fb783 !important;
 }
 
 .react-calendar {

@@ -3,6 +3,7 @@ import CircleIcon from "../components/icons/circleIcons";
 import { LogIn } from "../API Requests/user";
 import { useAppContext } from "../context/context";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Login = () => {
   const formRef = useRef();
@@ -24,6 +25,7 @@ const Login = () => {
 
     // login with data
     try {
+      setError("");
       setLoading(true);
       const data = await LogIn({ email, password });
 
@@ -84,6 +86,13 @@ const Login = () => {
         <button className="grid w-40 h-10 px-8 place-items-center btn">
           {loading ? <span className="btn-loader"></span> : "Login"}
         </button>
+
+        <p className="mt-4 font-medium">
+          Don't have an account?
+          <Link href="/signup" className="ml-4 font-bold text-primary">
+            Signup here
+          </Link>
+        </p>
       </form>
     </main>
   );

@@ -220,13 +220,12 @@ const Update = () => {
                 htmlFor="height"
                 className="block font-medium font-OpenSans"
               >
-                Height:
+                Height (ft):
               </label>
               <input
                 required
-                type="text"
+                type="number"
                 name="height"
-                placeholder="e.g 8 ft"
                 className="w-full px-4 py-2 mt-1 font-medium tracking-wide bg-white border-2 border-gray-200 rounded-xl outline-primary"
               />
             </article>
@@ -235,13 +234,12 @@ const Update = () => {
                 htmlFor="weight"
                 className="block font-medium font-OpenSans"
               >
-                Weight:
+                Weight (kg):
               </label>
               <input
                 required
-                type="text"
+                type="number"
                 name="weight"
-                placeholder="e.g 20 kg"
                 className="w-full px-4 py-2 mt-1 font-medium tracking-wide bg-white border-2 border-gray-200 rounded-xl outline-primary"
               />
             </article>

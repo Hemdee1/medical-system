@@ -1,13 +1,18 @@
 import React from "react";
 
-function Medhistory({ type }) {
+function Medhistory({ data }) {
   return (
-    <div className="active px-4 rounded-lg my-4 text-lg lg:text-xl py-2 shadow-gray-400 shadow-md">
+    <div
+      className={
+        "px-4 py-2 my-4 text-lg rounded-lg shadow lg:text-xl shadow-gray-400 " +
+        data.color
+      }
+    >
       <div className="flex justify-between">
-        <p className="font-normal">{type}</p>
-        <p className="font-semibold">25 March, 2023</p>
+        <p className="font-normal">{data.title}</p>
+        <p className="font-semibold">{data.date}</p>
       </div>
-      <p className="mt-3">Consultation with Dr. Agu Jonas</p>
+      <p className="mt-3">{data.info}</p>
     </div>
   );
 }

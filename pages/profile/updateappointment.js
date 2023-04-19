@@ -1,65 +1,47 @@
 import { useEffect, useRef, useState } from "react";
 import ProfileLayout from "../../components/ProfileLayout";
 import Link from "next/link";
-import { CreateApointment } from "../../API Requests/appointment";
+import { UpdateApointment } from "../../API Requests/appointment";
 import { useAppContext } from "../../context/context";
 import timeZones from "../../utils/timeZone";
 import json from "../../hospitalsData.json";
 import { useRouter } from "next/router";
-import getRandom from "../../utils/getRandom";
 
 let hospitals = [];
+let doctors = [];
 
 json.datas.map((data) => {
   const { hospitals: hospi } = data;
 
   hospi.map((hospital) => {
     hospitals.push(hospital);
+
+    hospital.doctors.map((doctor) => {
+      doctors.push(doctor);
+    });
   });
 });
 
-const BookAppointment = () => {
+const UpdateAppointment = () => {
   const formRef = useRef();
   const route = useRouter();
-  const { user, setAppointments } = useAppContext();
+  const { appointments, setAppointments, user } = useAppContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const [selectedHospital, setSelectedHospital] = useState("");
-  const [selectedDoctor, setSelectedDoctor] = useState("");
-
-  const [filteredHospitals, setFilteredHospitals] = useState(hospitals);
-  const [filteredDoctors, setFilteredDoctors] = useState([]);
-
-  const stateHospitals = json.datas.filter(
-    (data) => data.state === user?.state
-  )[0]?.hospitals;
+  console.log(user);
 
   useEffect(() => {
-    const doctors = filteredHospitals.filter(
-      (hospital) => hospital.name === selectedHospital
-    )[0]?.doctors;
+    const id = route.query.id;
+    console.log(id);
+    const appointment = appointments.find((app) => app._id === id);
 
-    setFilteredDoctors(doctors);
-  }, [selectedHospital]);
-
-  const filterByState = (e) => {
-    const check = e.target.checked;
-
-    if (check) {
-      setFilteredHospitals(stateHospitals);
-    } else {
-      setFilteredHospitals(hospitals);
-    }
-  };
-
-  const autoSelectHospital = () => {
-    const hospital = getRandom(stateHospitals);
-    setSelectedHospital(hospital.name);
-
-    const doctor = getRandom(hospital.doctors);
-    setSelectedDoctor(doctor.name);
-  };
+    formRef.current.title.value = appointment.title;
+    formRef.current.date.value = appointment.date;
+    formRef.current.time.value = appointment.time;
+    formRef.current.hospital.value = appointment.hospital;
+    formRef.current.doctor.value = appointment.doctor;
+  }, [route.query]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -67,33 +49,32 @@ const BookAppointment = () => {
     const title = formRef.current.title.value.trim();
     const date = formRef.current.date.value.trim();
     const time = formRef.current.time.value.trim();
-    const hospital = formRef.current.hospital.value.trim();
-    const doctor = formRef.current.doctor.value.trim();
-    const status = "upcoming";
+    const status = "rescheduled";
 
-    if (!title || !date || !time || !hospital || !doctor) return;
-
-    if (!user?.weight || !user?.height) {
-      return setError(
-        "Error: Your profile information must be updated before you can book an appointment"
-      );
-    }
+    if (!title || !date || !time) return;
 
     if (new Date(date).getTime() + 86400000 < Date.now()) {
       return setError("Error: You can't fix appointment to a past date");
     }
 
-    const data = { title, date, time, hospital, doctor, status };
+    const data = { title, date, time, status };
 
     try {
       setError("");
       setLoading(true);
-      const appointment = await CreateApointment(data);
+      const appointment = await UpdateApointment(data, route.query?.id);
 
-      setAppointments((prev) => [appointment, ...prev]);
+      const newAppointments = appointments.map((app) => {
+        if (app._id === appointment._id) {
+          return appointment;
+        }
+        return app;
+      });
+
+      setAppointments(newAppointments);
       route.push({
         pathname: "/profile/appointmentsuccessful",
-        query: { id: appointment._id, type: "booked" },
+        query: { id: appointment._id, type: "rescheduled" },
       });
     } catch (error) {
       console.log(error);
@@ -106,7 +87,7 @@ const BookAppointment = () => {
     <ProfileLayout>
       <main className="flex flex-col items-center justify-center w-full py-10">
         <h2 className="text-2xl font-semibold sm:text-4xl font-Caudex text-primary">
-          Book An Appointment
+          Reschedule An Appointment
         </h2>
         <form
           ref={formRef}
@@ -157,15 +138,6 @@ const BookAppointment = () => {
             </article>
           </div>
 
-          {user?.state && (
-            <span
-              className="px-2 py-2 font-semibold text-center text-white rounded-md cursor-pointer bg-slate-600"
-              onClick={autoSelectHospital}
-            >
-              Auto Select Hospital Base On My Location ({user?.state} State)
-            </span>
-          )}
-
           <article>
             <div className="flex items-center justify-between">
               <label
@@ -174,30 +146,16 @@ const BookAppointment = () => {
               >
                 Hospital:
               </label>
-              {user?.state && (
-                <div className="flex gap-2">
-                  <input
-                    type="checkbox"
-                    name="check"
-                    id="check"
-                    onChange={filterByState}
-                  />
-                  <p className="text-sm font-medium">
-                    Show {user?.state} State Only
-                  </p>
-                </div>
-              )}
             </div>
             <select
               required
               id="hospital"
               name="hospital"
-              value={selectedHospital}
-              onChange={(e) => setSelectedHospital(e.target.value)}
-              className="w-full px-4 py-2 mt-1 font-medium tracking-wide bg-white border-2 border-gray-200 rounded-xl outline-primary"
+              disabled
+              className="w-full px-4 py-2 mt-1 font-medium tracking-wide bg-gray-300 border-2 border-gray-200 rounded-xl outline-primary"
             >
               <option value=""></option>
-              {filteredHospitals.map((hospital, index) => (
+              {hospitals.map((hospital, index) => (
                 <option value={hospital.name} key={index}>
                   {hospital.name}
                 </option>
@@ -212,12 +170,11 @@ const BookAppointment = () => {
               required
               id="doctor"
               name="doctor"
-              value={selectedDoctor}
-              onChange={(e) => setSelectedDoctor(e.target.value)}
-              className="w-full px-4 py-2 mt-1 font-medium tracking-wide bg-white border-2 border-gray-200 rounded-xl outline-primary"
+              disabled
+              className="w-full px-4 py-2 mt-1 font-medium tracking-wide bg-gray-300 border-2 border-gray-200 rounded-xl outline-primary"
             >
               <option value=""></option>
-              {filteredDoctors?.map((doctor, index) => (
+              {doctors?.map((doctor, index) => (
                 <option value={doctor.name} key={index}>
                   {doctor.name}, {doctor.specialty}
                 </option>
@@ -240,7 +197,7 @@ const BookAppointment = () => {
             {loading ? (
               <span className="btn-loader"></span>
             ) : (
-              "Book Appointment"
+              "Reschedule Appointment"
             )}
           </button>
         </form>
@@ -249,4 +206,4 @@ const BookAppointment = () => {
   );
 };
 
-export default BookAppointment;
+export default UpdateAppointment;
