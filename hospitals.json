@@ -7,7 +7,7 @@
           "name": "Lagos University Teaching Hospital",
           "type": "Public",
           "address": "Idi-Araba, Lagos",
-          "description": "Lagos University Teaching Hospital (LUTH) is a Public tertiary healthcare institution  that provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "The Lagos University Teaching Hospital (LUTH) is a Public tertiary institution in Nigeria , with over 950 admission beds, Forty-Six (46) Clinical Departments, Eighteen (18) Non-Clinical Departments and Outreaches at both Yaba and Pakoto. Presently the Hospital has over Two Thousand Three hundred (2,300) Staff comprising of Consultants, Resident/Medical Officers, Nurses, Pharmacists, Physiotherapists, Medical Laboratory scientists, Nutritionists, Hospital Administrators, Engineers and other categories of staff",
           "image_url": "https://www.thequickfinder.com/wp-content/uploads/2021/01/luth-13.jpg",
           "doctors": [
             {
@@ -31,8 +31,8 @@
           "name": "Reddington Hospital",
           "type": "Private",
           "address": "12 Idowu Martins Street, Victoria Island, Lagos",
-          "description": "Reddington Hospital is a Private hospital that provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
-          "image_url": "https://reddingtonhospital.com/wp-content/uploads/2020/02/04-2-1.jpg",
+          "description": "Reddington Hospital is a Private hospital is a 5-star one stop facility providing comprehensive solution to most healthcare needs. This facility was set up as a tertiary centre with specialities, Reddington Lekki Hospital has been established to deliver excellent services to the medical field, with all departments supported by the latest technologies and state-of-the-art medical equipments.",
+          "image_url": "https://reddingtonlekki.com/wp-content/uploads/2019/03/slide-another.jpg",
           "doctors": [
             {
               "name": "Dr. Bolanle Adeyemi",
@@ -55,8 +55,8 @@
           "name": "St. Nicholas Hospital",
           "type": "Private",
           "address": "57 Campbell Street, Lagos Island, Lagos",
-          "description": "St. Nicholas Hospital is a private hospital that hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
-          "image_url": "https://www.channelstv.com/wp-content/uploads/2020/04/rsz_1st-nicholas-hospital_campbell-1024x683.jpg",
+          "description": "St. Nicholas Hospital is a private hospital that serves the health care needs of our community by providing comprehensive care to prevent illness, relieve suffering, restore health and promote well being during each life stage. We will provide advanced procedures and modern technology, within our available resources, with a focus on caring, compassion and patient safety.",
+          "image_url": "https://campidu.com/file/St.-Nicholas-Hospital_Campbell-1024x683.jpg",
           "doctors": [
             {
               "name": "Dr. Adeyemi Adekunle",
@@ -79,7 +79,7 @@
           "name": "Eko Hospital",
           "type": "Private",
           "address": "31 Mobolaji Bank Anthony Way, Ikeja, Lagos",
-          "description": "Eko Hospital is a Private hospital The hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
+          "description": "Eko hospital main objective and goal is to provide a wide range of health services, including secondary services for its local population, regional as well as national health services. Eko hospital, is the first private hospital to be quoted on the floor of the Nigerian Stock Exchange",
           "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/EKO_hospital_Victoria_Island%2CLagos.jpg",
           "doctors": [
             {
@@ -103,8 +103,8 @@
           "name": "Lagoon Hospital",
           "type": "Private",
           "address": "6A, Marinho Drive, Victoria Island, Lagos",
-          "description": "Lagoon Hospital is a Private hospital that hospital provides quality healthcare services to its patients using modern technology and highly trained medical professionals.",
-          "image_url": "https://moanigeria.com/wp-content/uploads/slider_images/Lagoon%20Hospital,%20Apapa.jpg",
+          "description": "Lagoon Hospital is a Private hospital that are a consistently patient-first, world-class healthcare service provider and the leading private tertiary care organization in Nigeria. We operate a collegiate model of multi-disciplinary care and this bolsters the efficiency of highly specialized services delivered to each patient at all departments.",
+          "image_url": "https://www.lagoonhospitals.com/wp-content/uploads/2022/11/aboutt.jpg",
           "doctors": [
             {
               "name": "Dr. Emeka Okoro",
@@ -122,6 +122,13 @@
               "contact": "080XXXXXXXX"
             }
           ]
+        },
+         {
+          "name": "Ever Care Hospital",
+          "type": "Private",
+          "address": "1, Admiralty Way, Bisola Durosinmi Etti Dr, Lekki Phase 1, Lagos",
+          "description": "Evercare hospital Lekki is a 165-bed purpose-built multispecialty, tertiary care private hospital in Nigeria. Evercare Hospital Lekki offers care across a range of specialty medical and surgical services. This is a first of its kind facility in Nigeria and will deliver high quality, and accessible healthcare to communities in Lagos and Nigeria at large.",
+          "image_url": "https://lh3.googleusercontent.com/p/AF1QipO5XKcN4DJiKp8-6QVJ73ftJN4bNxCXSEiZLWL6=s680-w680-h510"
         }
       ]
     }

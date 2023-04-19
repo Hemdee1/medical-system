@@ -8,8 +8,8 @@ import services from "../public/svg/services.svg";
 
 const SectionOne = () => {
   return (
-    <div className="">
-      <div className=" flex justify-end mr-2 lg:mt-0 mt-10">
+    <div className="bg-white">
+      <div className=" flex justify-end mr-2 lg:mt-0 mt-10 bg-white">
         <Image
           priority
           width={900}

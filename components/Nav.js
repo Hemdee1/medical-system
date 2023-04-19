@@ -2,10 +2,14 @@ import Logo from "../public/image/Logo.png";
 import { Pivot as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 // import  "../Custom-styles/nav.css";
 
 const Nav = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+
+  const animateFrom = {opacity: 0, y: -80}
+  const animateTo = { opacity: 1, y: 0};
   
 // const handleClick = () => {
 //   setOpen(false);
@@ -23,13 +27,13 @@ const Nav = () => {
             className="mt-4 lg:mt-7"
           />
         </div>
-        <div className="md:hidden hidden lg:block">
-          <ul className="font-OpenSans text-[20px] flex xl:space-x-28 lg:space-x-20 pt-5 text-black">
-            <li className=" menu">Home</li>
-            <li className="menu">About</li>
-            <li className="menu">Services</li>
-            <li className="menu">Contact</li>
-            <li className="menu">Login</li>
+        <div className="md:hidden hidden lg:block font-serif">
+          <ul className=" text-[20px] flex xl:space-x-28 lg:space-x-20 pt-5 text-black">
+            <li className="hover:text-primary menu">Home</li>
+            <li className="menu hover:text-primary">About</li>
+            <li className="menu hover:text-primary">Services</li>
+            <li className="menu hover:text-primary">Contact</li>
+            <li className="menu hover:text-primary">Login</li>
           </ul>
         </div>
       </div>
@@ -56,13 +60,48 @@ const Nav = () => {
         </div>
       </div>
       {open && (
-        <div className="bg-[#EBFFF5] w-full h-screen fixed z-10 slide-in-left">
+        <div className="bg-[#EBFFF5] w-full h-screen fixed z-10 slide-in-left font-serif">
           <ul className="font-OpenSans text-[20px] flex flex-col space-y-16 pt-28 text-black  pl-20">
-            <li className="cursor-pointer menu hover:text-primary">Home</li>
-            <li className="cursor-pointer menu hover:text-primary">About</li>
-            <li className="cursor-pointer menu hover:text-primary">Services</li>
-            <li className="cursor-pointer menu hover:text-primary">Contact</li>
-            <li className="cursor-pointer menu hover:text-primary">Login</li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 1.40}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              Home
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 1.30}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              About
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 1.20}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              Services
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 1.10}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              Contact
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 0.90}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              Login
+            </motion.li>
           </ul>
         </div>
       )}

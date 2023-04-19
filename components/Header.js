@@ -1,20 +1,46 @@
 import doctor from "../public/image/doctor frame.png";
 import Image from "next/image";
 import location from "../public/image/location.png"
-import calender from "../public/image/calender.png"
-import time from "../public/image/time.png";
+import calendar from "../public/svg/calendar.svg"
+import time1 from "../public/image/time1.png";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  
+  const [time, setTime] = useState(getTime());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(getTime());
+    }, 60000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+ function getTime() {
+   const now = new Date();
+   const hours = now.getHours();
+   const minutes = now.getMinutes();
+   const amPm = hours >= hours % 18 ? 'PM' : 'AM';
+   const formattedHours = hours % 12 === 0 ? 12 : hours % 12;
+   const formattedMinutes = minutes < 10 ? `O${minutes}` : minutes;
+   return `${formattedHours}:${formattedMinutes} ${amPm}`
+
+
+ }
+
   return (
     <div className="bg-[#EBFFF5] w-full h-full rounded-b-3xl relative lg:pb-10 pb-[130px] md:pb-10">
       <div className="lg:flex lg:justify-around lg:flex-row md:flex md:pt-12 pt-0 md:justify-around md:flex-row lg:pt-12 sm:flex-col flex-col">
-        <div className="lg:pl-7 xl:pl-0">
-          <h1 className="lg:text-[40px] md:pl-7 pl-7 sm:pl-7 lg:pl-0 md:text-3xl text-3xl sm:text-5xl text-black md:-mt-5 pt-[110px] sm:pt-24  font-Caudex">
+        <div className="lg:pl-7 xl:pl-7">
+          <h1 className="lg:text-[30px] xl:text-[40px] md:pl-7 pl-7 sm:pl-7 lg:pl-0 md:text-xl text-3xl sm:text-5xl text-black md:-mt-5 pt-[110px] sm:pt-24 xl:leading-8 font-Caudex">
             "Where clear vision meets
             <br />
             <span> compasionate care".</span>
           </h1>
-          <p className="mt-5 md:text-sm sm:text-base text-base text-black  font-OpenSans md:pl-7 pl-7 sm:pl-7 lg:pl-0 leading-6">
+          <p className="mt-5 md:text-[10px] lg:text-sm sm:text-sm text-base text-black  font-OpenSans md:pl-7 pl-7 sm:pl-7 lg:pl-0 leading-6 xl:pt-3 lg:pt-3">
             A specialized medical facility that provides diagnostic,
             <br /> therapeutic, and surgical services related to the eyes and{" "}
             <br />
@@ -29,7 +55,7 @@ const Header = () => {
             height={900}
             src={doctor}
             alt="logo"
-            className="lg:-mt-20 md:-mt-[50px] z-10 -mt-16 sm:-mt-16 sm:ml-14 md:w-[410px] md:h-[450px] lg:w-[550px] xl:mr-5 lg:h-[600px]"
+            className="lg:-mt-20 md:-mt-[50px] z-10 -mt-16 sm:-mt-16 sm:ml-14 md:w-[410px] md:h-[450px] lg:w-[550px] xl:mr-10 lg:h-[600px] md:mr-7"
           />
         </div>
       </div>
@@ -64,9 +90,9 @@ const Header = () => {
               priority
               width={20}
               height={20}
-              src={calender}
+              src={calendar}
               alt="calender"
-              className="lg:w-10 lg:h-10 md:w-5 md:h-5 w-5 h-5"
+              className="lg:w-5 lg:h-5 mt-3 md:w-5 md:h-5 w-5 h-5"
             />
             <p className="text-black lg:text-base md:text-xs text-[8px] sm:text-xs">
               10 April, <br />
@@ -78,12 +104,13 @@ const Header = () => {
               priority
               width={20}
               height={20}
-              src={time}
+              src={time1}
               alt="time"
               className="lg:w-10 lg:h-10 w-5 h-5 mt-1"
             />
             <p className="mt-2 text-black lg:text-base md:text-xs text-[8px] sm:text-xs">
-              11:00 am
+              {time}
+              {/* 11:00 am */}
             </p>
           </div>
           <div className="md:-mt-1 lg:-mt-2">
