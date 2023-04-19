@@ -2,35 +2,38 @@ import Logo from "../public/image/Logo.png";
 import { Pivot as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
+// import  "../Custom-styles/nav.css";
 
 const Nav = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+
+  const animateFrom = {opacity: 0, y: -80}
+  const animateTo = { opacity: 1, y: 0};
   
 // const handleClick = () => {
 //   setOpen(false);
 // };
   return (
     <div>
-      <div className="bg-[#EBFFF5] w-full h-20 lg:flex lg:space-x-60 md:hidden hidden xl:space-x-80 sm:hidden fixed z-10">
-        <div className="z-10 lg:ml-5 md:pl-8">
+      <div className="bg-[#EBFFF5] w-full h-20 lg:flex lg:space-x-52 md:hidden hidden xl:space-x-80 sm:hidden fixed z-10">
+        <div className="z-10 lg:ml-2 xl:ml-6 md:pl-8">
           <Image
             priority
             width={100}
             height={100}
             src={Logo}
             alt="logo"
-            className="mt-4"
+            className="mt-4 lg:mt-7"
           />
         </div>
-        <div className="md:hidden hidden lg:block">
-          <ul className="font-OpenSans text-[20px] flex space-x-24 pt-5 text-black">
-            <li className="hover:underline hover:bg-secondary hover:rounded-full hover:w-3 hover:bg-h-1  duration-200 ease-in-out ">
-              Home
-            </li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>Login</li>
+        <div className="md:hidden hidden lg:block font-serif">
+          <ul className=" text-[20px] flex xl:space-x-28 lg:space-x-20 pt-5 text-black">
+            <li className="hover:text-primary menu">Home</li>
+            <li className="menu hover:text-primary">About</li>
+            <li className="menu hover:text-primary">Services</li>
+            <li className="menu hover:text-primary">Contact</li>
+            <li className="menu hover:text-primary">Login</li>
           </ul>
         </div>
       </div>
@@ -57,15 +60,48 @@ const Nav = () => {
         </div>
       </div>
       {open && (
-        <div className="bg-[#EBFFF5] w-full h-96 fixed z-10">
-          <ul className="font-OpenSans text-[20px] flex flex-col space-y-7 pt-16 text-black transition-colors ease-in-out duration-300 pl-7">
-            <li className="hover:underline hover:bg-secondary hover:rounded-full hover:w-3 hover:bg-h-1  duration-200 ease-in-out ">
+        <div className="bg-[#EBFFF5] w-full h-screen fixed z-10 slide-in-left font-serif">
+          <ul className="font-OpenSans text-[20px] flex flex-col space-y-16 pt-28 text-black  pl-20">
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 1.40}}
+              className="cursor-pointer menu hover:text-primary"
+            >
               Home
-            </li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>Login</li>
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 1.30}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              About
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 1.20}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              Services
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 1.10}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              Contact
+            </motion.li>
+            <motion.li
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{delay: 0.90}}
+              className="cursor-pointer menu hover:text-primary"
+            >
+              Login
+            </motion.li>
           </ul>
         </div>
       )}
