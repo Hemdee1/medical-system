@@ -29,11 +29,8 @@ const UpdateAppointment = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  console.log(user);
-
   useEffect(() => {
     const id = route.query.id;
-    console.log(id);
     const appointment = appointments.find((app) => app._id === id);
 
     formRef.current.title.value = appointment.title;

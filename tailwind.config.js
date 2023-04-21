@@ -19,6 +19,9 @@ module.exports = {
         Caudex: "Caudex, serif",
         OpenSans: "Open Sans, san-serif",
       },
+      width: {
+        fullscreen: "1350px",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],

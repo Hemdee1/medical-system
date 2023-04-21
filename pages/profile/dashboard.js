@@ -38,6 +38,15 @@ const Dashboard = () => {
     setSelectAppointment(appointment);
   }, [selectDate]);
 
+  const formatAppointmentDay = ({ date }) => {
+    for (let i = 0; i < appointments.length; i++) {
+      const element = appointments[i].date;
+
+      if (date.toDateString() === new Date(element).toDateString())
+        return "highlight";
+    }
+  };
+
   return (
     <ProfileLayout>
       <main className="w-full bg-white">
@@ -103,16 +112,7 @@ const Dashboard = () => {
               {/* Date calendar here */}
               <Calendar
                 onClickDay={(val) => setSelectDate(val)}
-                tileClassName={({ date }) => {
-                  for (let i = 0; i < appointments.length; i++) {
-                    const element = appointments[i].date;
-
-                    if (
-                      date.toDateString() === new Date(element).toDateString()
-                    )
-                      return "highlight";
-                  }
-                }}
+                tileClassName={formatAppointmentDay}
               />
               <div className="mt-5 sm:mt-10 flex items-center justify-center gap-1 flex-col font-semibold text-center">
                 <span>{dateFormat(selectDate, "DDDD mmmm dS")}:</span>

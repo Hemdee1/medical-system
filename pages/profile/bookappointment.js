@@ -22,6 +22,7 @@ const BookAppointment = () => {
   const formRef = useRef();
   const route = useRouter();
   const { user, setAppointments } = useAppContext();
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -34,6 +35,17 @@ const BookAppointment = () => {
   const stateHospitals = json.datas.filter(
     (data) => data.state === user?.state
   )[0]?.hospitals;
+
+  useEffect(() => {
+    const hospital = route.query.hospital;
+    if (!hospital) return;
+
+    const timeout = setTimeout(() => {
+      formRef.current.hospital.value = hospital;
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, [route.query]);
 
   useEffect(() => {
     const doctors = filteredHospitals.filter(
