@@ -9,8 +9,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header>
-      <div className="bg-[#EBFFF5] w-fullscreen items-center max-w-full px-5 sm:px-20 mx-auto flex justify-between h-20 fixed z-10">
+    <header className="z-50 relative">
+      <div className="bg-[#EBFFF5] w-fullscreen items-center max-w-full px-5 sm:px-20 mx-auto flex justify-between h-20 fixed top-0 left-0 z-10">
         <Link href="/" className="z-10">
           <Image
             priority
@@ -20,7 +20,7 @@ const Header = () => {
             alt="logo"
           />
         </Link>
-        <div className="hidden md:block font-serif">
+        <div className="hidden md:block font-OpenSans">
           <ul className=" text-xl flex gap-10 lg:gap-20 text-black">
             <Link href="#" className="hover:text-primary">
               About
@@ -32,7 +32,7 @@ const Header = () => {
               Hospitals
             </Link>
             {user ? (
-              <Link href="/dashboard" className="hover:text-primary">
+              <Link href="/profile/dashboard" className="hover:text-primary">
                 Dashboard
               </Link>
             ) : (
@@ -49,7 +49,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`bg-[#EBFFF5] w-[250px] shadow shadow-gray-400 h-screen fixed z-10 font-serif transition-all duration-300 ${
+        className={`bg-[#EBFFF5] w-[250px] shadow shadow-gray-400 h-screen fixed z-10 font-OpenSans transition-all duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >

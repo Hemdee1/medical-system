@@ -6,7 +6,7 @@ import json from "../hospitalsData.json";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import dateFormat from "dateformat";
-import { doctors } from "../utils/data";
+import { doctors, hospitalList } from "../utils/data";
 
 const hospitals = json.datas[1];
 
@@ -15,7 +15,7 @@ const Homepage = () => {
 
   return (
     <Layout>
-      <section className="bg-[#EBFFF5] min-h-[710px] pt-20">
+      <section className="bg-[#EBFFF5] min-h-[710px]">
         <div className="flex flex-col justify-between max-w-full min-h-full px-5 pt-20 mx-auto w-fullscreen sm:px-20 lg:flex-row">
           <div className="w-full lg:w-[500px] max-w-full text-secondary">
             <h1 className="font-bold text-[32px] sm:text-[40px] font-Caudex">
@@ -57,7 +57,7 @@ const Homepage = () => {
                 </p>
               </div>
               <Link
-                href="/pfofile/bookappointment"
+                href="/profile/bookappointment"
                 className="btn bg-transparent border-2 border-primary text-primary mt-6 rounded-md w-[150px] grid place-items-center transition-all duration-200 hover:scale-105"
               >
                 Book
@@ -133,7 +133,7 @@ const Homepage = () => {
           hospitals
         </h3>
         <div className="mt-10">
-          <HospitalList data={hospitals} type="home" />
+          <HospitalList data={hospitalList} type="home" />
         </div>
       </section>
 

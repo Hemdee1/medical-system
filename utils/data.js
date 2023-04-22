@@ -1,3 +1,5 @@
+import json from "../hospitalsData.json";
+
 export const records = [
   {
     title: "Consultation",
@@ -18,6 +20,16 @@ export const records = [
     color: "bg-green-300",
   },
 ];
+
+export const hospitalList = {
+  hospitals: [
+    json.datas[0].hospitals[1],
+    json.datas[1].hospitals[3],
+    json.datas[2].hospitals[4],
+    json.datas[3].hospitals[1],
+    json.datas[4].hospitals[1],
+  ],
+};
 
 export const doctors = [
   {
