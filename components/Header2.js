@@ -22,7 +22,7 @@ const Header = () => {
         </Link>
         <div className="hidden md:block font-OpenSans">
           <ul className=" text-xl flex gap-10 lg:gap-20 text-black">
-            <Link href="#" className="hover:text-primary">
+            <Link href="/about" className="hover:text-primary">
               About
             </Link>
             <Link href="#" className="hover:text-primary">
