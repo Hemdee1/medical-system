@@ -157,7 +157,11 @@ const ProfileLayout = ({ children }) => {
 
           <h3>{title}</h3>
           <button className="ml-auto lg:hidden">
-            <Hamburger toggle={setOpenSidebar} toggled={openSidebar} />
+            <Hamburger
+              toggle={setOpenSidebar}
+              toggled={openSidebar}
+              size={25}
+            />
           </button>
         </div>
         <section className="bg-white sm:p-4 w-full  h-[calc(100vh-70px)] overflow-y-scroll scrollbar-thumb-gray-300 scrollbar mt-[70px]">

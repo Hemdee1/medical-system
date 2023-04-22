@@ -18,3 +18,26 @@ export const records = [
     color: "bg-green-300",
   },
 ];
+
+export const doctors = [
+  {
+    url: "https://www.statnews.com/wp-content/uploads/2021/04/AdobeStock_212196263-645x645.jpeg",
+    name: "Daniel Johnson",
+    role: "Medicine",
+  },
+  {
+    url: "https://www.aoa.org/AOA/Images/Patients/Doctor_AdobeStock_330052573.jpeg",
+    name: "Rose Davies",
+    role: "Paediatrics",
+  },
+  {
+    url: "https://img.freepik.com/premium-photo/your-health-is-important-me-shot-handsome-young-doctor-standing-alone-his-clinic_590464-58132.jpg",
+    name: "Thompson Paul",
+    role: "Orthopaedics",
+  },
+  {
+    url: "https://onedoctor.app/images/rectangle-8.png",
+    name: "Wadia Abdullahi",
+    role: "Neurology",
+  },
+];

@@ -71,7 +71,7 @@ const Footer = () => {
                 alt="map"
                 className="w-5 h-5 mt-4 lg:w-8 lg:h-8 md:w-8 md:h-8"
               />
-              <p className="mt-3 text-white font-OpenSans">
+              <p className="mt-3 text-white text-sm sm:text-base font-OpenSans">
                 27, Adetola Street
                 <br /> Abuja, Nigeria
               </p>
@@ -109,16 +109,16 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="pr-5 space-y-5 text-white lg:pr-16 md:pr-12 sm:pr-8 font-OpenSans">
+          <div className="pr-5 space-y-5 flex flex-col gap-3 items-start text-white text-sm sm:text-base lg:pr-16 md:pr-12 sm:pr-8 font-OpenSans">
             <h2 className="font-bold uppercase">Quick Links</h2>
-            <p className="">About Us</p>
-            <p className="">Services</p>
-            <p className="">Contact Us</p>
-            <p className="">Login</p>
+            <button className="">About</button>
+            <button className="">Services</button>
+            <button className="">Hospital</button>
+            <button className="">Dashboard</button>
           </div>
         </div>
         <div className="w-full mt-24">
-          <p className="py-3 font-medium text-center text-white border-t border-white font-OpenSans">
+          <p className="py-3 px-10 font-medium text-sm sm:text-base text-center text-white border-t border-white font-OpenSans">
             © 2023 Cornea clinic PVT. LTD. All Rights Reserved.
           </p>
         </div>
