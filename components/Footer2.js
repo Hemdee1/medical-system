@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-[#EBFFF5]">
-        <div className="flex flex-col items-center justify-center max-w-full px-10 lg:flex-row gap-11 w-fullscreen max-auto py-7">
+        <div className="flex flex-col items-center justify-center max-w-full px-10 mx-auto lg:flex-row gap-11 w-fullscreen py-7">
           <div className="flex gap-5 max-w-full w-[350px] px-6 py-3 border-2 border-primary rounded-2xl">
             <Image
               priority
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full bg-primary ">
-        <div className="flex justify-between pt-10 pl-5 lg:pl-16 lg:flex lg:justify-between md:flex md:justify-between md:pl-12 sm:pl-8 sm:justify-between">
+        <div className="flex justify-between max-w-full px-5 pt-10 mx-auto w-fullscreen sm:px-20">
           <div>
             <div>
               <Image
@@ -71,7 +71,7 @@ const Footer = () => {
                 alt="map"
                 className="w-5 h-5 mt-4 lg:w-8 lg:h-8 md:w-8 md:h-8"
               />
-              <p className="mt-3 text-white text-sm sm:text-base font-OpenSans">
+              <p className="mt-3 text-sm text-white sm:text-base font-OpenSans">
                 27, Adetola Street
                 <br /> Abuja, Nigeria
               </p>
@@ -109,7 +109,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="pr-5 space-y-5 flex flex-col gap-3 items-start text-white text-sm sm:text-base lg:pr-16 md:pr-12 sm:pr-8 font-OpenSans">
+          <div className="flex flex-col items-start gap-3 pr-5 space-y-5 text-sm text-white sm:text-base lg:pr-16 md:pr-12 sm:pr-8 font-OpenSans">
             <h2 className="font-bold uppercase">Quick Links</h2>
             <button className="">About</button>
             <button className="">Services</button>
@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full mt-24">
-          <p className="py-3 px-10 font-medium text-sm sm:text-base text-center text-white border-t border-white font-OpenSans">
+          <p className="px-10 py-3 text-sm font-medium text-center text-white border-t border-white sm:text-base font-OpenSans">
             © 2023 Cornea clinic PVT. LTD. All Rights Reserved.
           </p>
         </div>

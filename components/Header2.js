@@ -9,8 +9,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="z-50 relative">
-      <div className="bg-[#EBFFF5] w-fullscreen items-center max-w-full px-5 sm:px-20 mx-auto flex justify-between h-20 fixed top-0 left-0 z-10">
+    <header className="z-50 bg-[#EBFFF5] fixed top-0 left-0 w-full">
+      <div className="relative flex items-center justify-between h-20 max-w-full px-5 mx-auto w-fullscreen sm:px-20">
         <Link href="/" className="z-10">
           <Image
             priority
@@ -21,7 +21,7 @@ const Header = () => {
           />
         </Link>
         <div className="hidden md:block font-OpenSans">
-          <ul className=" text-xl flex gap-10 lg:gap-20 text-black">
+          <ul className="flex gap-10 text-xl text-black lg:gap-20">
             <Link href="/about" className="hover:text-primary">
               About
             </Link>
