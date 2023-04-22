@@ -4,6 +4,7 @@ import { useAppContext } from "../context/context";
 import HospitalList from "../components/HospitalList";
 import json from "../hospitalsData.json";
 import Link from "next/link";
+import Layout from "../components/Layout";
 
 const hospitals = json.datas[1];
 
@@ -11,7 +12,7 @@ const Homepage = () => {
   const { user } = useAppContext();
 
   return (
-    <main>
+    <Layout>
       <section className="bg-[#EBFFF5] min-h-[710px]">
         <div className="flex flex-col items-center justify-between max-w-full min-h-full px-5 pt-20 mx-auto w-fullscreen sm:px-20 lg:flex-row">
           <div className="w-full lg:w-[500px] max-w-full text-secondary">
@@ -24,7 +25,7 @@ const Homepage = () => {
             </p>
             <div className="flex gap-5">
               <button className="btn mt-5 rounded-md w-[150px] transition-all duration-200 hover:scale-105">
-                Login
+                Get Started
               </button>
               <button className="btn mt-5 rounded-md w-[150px] transition-all duration-200 hover:scale-105">
                 Hospitals
@@ -64,11 +65,11 @@ const Homepage = () => {
       </section>
 
       <section className="min-h-screen py-20">
-        <div className="relative max-w-full px-5 mx-auto w-fullscreen sm:px-10 lg:px-0">
+        <div className="relative max-w-full px-2 mx-auto w-fullscreen sm:px-10 lg:px-0">
           <img
             src="/image/Eyecare.png"
             alt="shape"
-            className="absolute object-cover -translate-y-1/2 hidden lg:block left-14 xl:left-32 top-1/2 h-[200px] rounded-xl"
+            className="absolute object-cover -translate-y-1/2 hidden lg:block left-14 xl:left-32 top-1/2 h-[350px] rounded-xl"
           />
           <div className="w-full lg:w-[75%] border-2 border-primary py-10 pl-5 lg:pl-44 pr-5 xl:pr-20 border-r-0 rounded-2xl rounded-tr-none rounded-br-none font-OpenSans ml-auto">
             <h3 className="text-[30px] font-Caudex font-bold text-primary w-full sm:w-[360px]">
@@ -177,10 +178,10 @@ const Homepage = () => {
             <img
               src="/image/Eyecare.png"
               alt="image"
-              className="object-cover w-full h-[300px] sm:h-full"
+              className="object-cover w-full h-[300px] sm:h-[500px]"
             />
           </div>
-          <div className="w-full px-5 py-5 lg:w-1/2 sm:px-20">
+          <div className="flex flex-col justify-center w-full px-5 py-5 lg:w-1/2 sm:px-20">
             <h3 className="text-xl font-bold sm:text-3xl font-Caudex text-secondary">
               Health is wealth <br />
               Make the decision to take care of yourself and your family.
@@ -196,7 +197,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-    </main>
+    </Layout>
   );
 };
 

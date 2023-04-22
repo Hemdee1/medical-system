@@ -20,7 +20,7 @@ module.exports = {
         OpenSans: "Open Sans, san-serif",
       },
       width: {
-        fullscreen: "1350px",
+        fullscreen: "1440px",
       },
     },
   },
