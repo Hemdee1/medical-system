@@ -6,9 +6,9 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "http://localhost:5000/api/:path*",
-        // destination:
-        //   "https://medical-system-backend-production.up.railway.app/api/:path*",
+        // destination: "http://localhost:5000/api/:path*",
+        destination:
+          "https://medical-system-backend-production.up.railway.app/api/:path*",
       },
     ];
   },
