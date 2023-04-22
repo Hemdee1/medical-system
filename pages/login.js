@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import CircleIcon from "../components/icons/circleIcons";
+import CircleIcon from "../components/icons/CircleIcons";
 import { LogIn } from "../API Requests/user";
 import { useAppContext } from "../context/context";
 import { useRouter } from "next/router";
