@@ -128,7 +128,7 @@ const Homepage = () => {
       </section>
 
       <section className="max-w-full mx-auto w-fullscreen">
-        <h3 className="text-[30px] font-Caudex font-bold text-primary text-center">
+        <h3 className="text-[30px] font-Caudex px-5 font-bold text-primary text-center">
           Healing communities one hospital at a time <br /> Our network of
           hospitals
         </h3>

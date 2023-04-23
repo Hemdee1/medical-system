@@ -164,7 +164,7 @@ const ProfileLayout = ({ children }) => {
             />
           </button>
         </div>
-        <section className="bg-white sm:p-4 w-full  h-[calc(100vh-70px)] overflow-y-scroll scrollbar-thumb-gray-300 scrollbar mt-[70px]">
+        <section className="bg-white sm:p-4 w-full pb-20 h-[calc(100vh-150px)] overflow-y-scroll scrollbar-thumb-gray-300 scrollbar mt-[70px]">
           {children}
         </section>
       </section>
