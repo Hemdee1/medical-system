@@ -82,7 +82,7 @@ const Footer = () => {
                   priority
                   width={30}
                   height={30}
-                  src="/svg/twitter.svg"
+                  src="/svg/Twitter.svg"
                   alt="twitter"
                   className="w-5 h-5 mt-4 lg:w-8 lg:h-8 md:w-8 md:h-8"
                 />
