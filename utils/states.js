@@ -13,7 +13,7 @@ const states = [
   "Edo",
   "Ekiti",
   "Enugu",
-  "FCT - Abuja",
+  "FCT",
   "Gombe",
   "Imo",
   "Jigawa",

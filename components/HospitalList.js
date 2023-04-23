@@ -88,7 +88,7 @@ const HospitalList = ({ data, type }) => {
             </Link>
           )}
         </div>
-        <div className="absolute flex items-center justify-between max-w-full gap-5 px-4 py-2 overflow-x-scroll -translate-x-1/2 bg-white bg-opacity-50 border border-gray-400 shadow-md scrollbar-thumb-slate-300 scrollbar sm:rounded-lg sm:px-8 sm:py-4 sm:overflow-auto left-1/2 -bottom-14 shadow-gray-400 backdrop-blur-sm">
+        <div className="absolute flex items-center justify-between max-w-full gap-5 px-4 py-2 overflow-x-scroll -translate-x-1/2 bg-white bg-opacity-50 border border-gray-400 shadow-md scrollbar-thumb-slate-300 sm:rounded-lg sm:px-8 sm:py-4 sm:overflow-auto left-1/2 -bottom-14 shadow-gray-400 backdrop-blur-sm">
           {data.hospitals.map((hospital, index) => (
             <HospitalButton
               key={index}
