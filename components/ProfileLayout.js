@@ -52,7 +52,7 @@ const ProfileLayout = ({ children }) => {
   return (
     <main className="fixed top-0 left-0 flex w-full h-screen">
       <aside
-        className={`min-w-[250px] h-screen shadow-gray-200 shadow-md bg-white py-4 transition-all duration-300 absolute top-0 lg:relative lg:left-0 z-20 ${
+        className={`min-w-[250px] h-full shadow-gray-200 shadow-md bg-white py-4 transition-all duration-300 absolute top-0 lg:relative lg:left-0 z-20 ${
           openSidebar ? "left-0" : "-left-full"
         }`}
       >
@@ -143,7 +143,7 @@ const ProfileLayout = ({ children }) => {
             </Link>
             <button
               onClick={handleLogout}
-              className="text-black flex justify-center items-center my-3 px-3 py-[10px] rounded-md absolute bottom-0 left-2 text-lg lg:text-xl font-semibold bg-red-300 w-[93%]"
+              className="text-black flex justify-center items-center my-3 px-3 py-[10px] rounded-md absolute bottom-14 md:bottom-0 left-2 text-lg lg:text-xl font-semibold bg-red-300 w-[93%]"
             >
               Logout
             </button>
